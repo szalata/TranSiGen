@@ -4,6 +4,18 @@ code for "Deep Representation Learning of Chemical-induced Transcriptional Profi
 ![Image text](https://github.com/myzheng-SIMM/TranSiGen/blob/main/data/TranSiGen.jpg)  
 Fig. 1 TranSiGen’s architecture and application. a The data processing flow for TranSiGen. b The architecture and inference process of TranSiGen. c The applications of TranSiGen-derived representation.
 
+### Installing dependencies
+Create the Conda environment from env.yml
+`conda env create -f env.yml`
+
+Activate the newly created environment
+`conda activate transigen`
+
+Install additional requirements using pip:
+`pip install torch==1.5.1+cu92 torchvision==0.6.1+cu92 -f https://download.pytorch.org/whl/torch_stable.html`
+`pip install -r pip-requirements.txt`
+
+
 ### Train model
 ```
 python train_TranSiGen_full_data.py --data_path ../data/LINCS2020/data_example/processed_data_id.h5
